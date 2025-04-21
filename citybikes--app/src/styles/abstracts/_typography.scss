@@ -1,0 +1,73 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// City Bikes Map
+.citybikesmap {
+	&__h2 {
+		color: var(--green1);
+		font-size: 1.5rem;
+
+		@include respond(sm) {
+			font-size: 1.75rem;
+		}
+		@include respond(md) {
+			font-size: 2rem;
+		}
+		@include respond(lg) {
+			font-size: 2.5rem;
+		}
+	}
+
+	&__loading {
+		color: var(--gray2);
+		font-size: 0.75rem;
+		font-family: 'Poppins', sans-serif;
+
+		@include respond(md) {
+			font-size: 1rem;
+		}
+	}
+
+	&__error {
+		color: var(--error);
+		font-size: 0.75rem;
+		font-family: 'Poppins', sans-serif;
+
+		@include respond(md) {
+			font-size: 1rem;
+		}
+	}
+
+	&__h3 {
+		color: var(--gray1);
+		font-size: 1rem;
+
+		@include respond(sm) {
+			font-size: 1.25rem;
+		}
+		@include respond(md) {
+			font-size: 1.5rem;
+		}
+	}
+
+	&__backbutton {
+		color: var(--gray1);
+		font-family: 'Inter', sans-serif;
+	}
+}
+
+// Leaflet styles
+// Popup
+.leaflet-popup-content {
+	h4 {
+		color: var(--green1);
+		font-family: 'Poppins', sans-serif;
+		font-size: 14px;
+	}
+	span {
+		color: var(--gray1);
+		font-family: 'Inter', sans-serif;
+	}
+}

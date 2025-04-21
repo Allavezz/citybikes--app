@@ -1,0 +1,72 @@
+@use '../abstracts' as *;
+
+.citybikesmap {
+	padding: 1rem 0;
+
+	@include respond(md) {
+		padding: 1rem;
+	}
+	@include respond(lg) {
+		padding: 2rem;
+	}
+
+	&__h2 {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	&__loading {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	&__error {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	&__container {
+		height: 60vh;
+		width: 100%;
+
+		@include respond(md) {
+			height: 80vh;
+		}
+	}
+
+	&__h3 {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	&__backbutton {
+		background-color: white;
+		border: 1px solid var(--green1);
+		padding: 0.5rem;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 999;
+
+		@include respond(md) {
+			padding: 1rem;
+		}
+	}
+}
+
+//Leaflet styles
+
+// Popup
+.leaflet-popup-content-wrapper {
+	border: 1px solid var(--green1);
+	box-shadow: none;
+}
+.leaflet-popup-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	h4 {
+		margin-bottom: 0.25rem;
+	}
+}
