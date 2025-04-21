@@ -1,5 +1,5 @@
 import { Marker } from 'react-leaflet';
-import { Station } from '../../types/cityBikesTypes';
+import { Station } from '../../types/CityBikesTypes';
 import StationDetailsL3 from './StationDetailsL3'; // Import the new Layer3 component
 import { mapMarkerIcon } from './mapMarkerIcons';
 

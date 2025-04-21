@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { fetchNetworks, fetchStations } from '../thunks/cityBikesThunk';
-import { CityBikesState, Network, Station } from '../../types/cityBikesTypes';
+import { CityBikesState, Network, Station } from '../../types/CityBikesTypes';
 
 // Initial City Bikes Redux State
 const initialState: CityBikesState = {

@@ -1,6 +1,6 @@
 import { Marker } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster'; // Import MarkerClusterGroup
-import { Network } from '../../types/cityBikesTypes';
+import { Network } from '../../types/CityBikesTypes';
 import { mapMarkerIcon } from './mapMarkerIcons';
 
 interface NetworksL1Props {

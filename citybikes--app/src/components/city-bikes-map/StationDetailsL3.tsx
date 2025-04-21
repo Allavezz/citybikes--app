@@ -1,5 +1,5 @@
 import { Popup } from 'react-leaflet';
-import { Station } from '../../types/cityBikesTypes';
+import { Station } from '../../types/CityBikesTypes';
 
 interface StationDetailsL3Props {
 	station: Station; // Station data object for a specific station

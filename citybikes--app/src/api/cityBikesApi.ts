@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Network, Station } from '../types/cityBikesTypes';
+import { Network, Station } from '../types/CityBikesTypes';
 import { ApiError } from '../types/ApiError';
 
 // API key stored in .ENV file for security
